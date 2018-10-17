@@ -95,9 +95,10 @@
 					
 	//gets data and runs redraw function
 	d3.csv("EntireData.csv", function(data) {
-										formatted = data;
-										redraw();
-									});
+		formatted = data;
+		redraw();
+	});
+		
 	d3.select(window)
 		.on("keydown", function() { altKey = d3.event.altKey; })
 		.on("keyup", function() { altKey = false; });
